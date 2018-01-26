@@ -22,3 +22,29 @@ npm run dev
 ```
 
 Visit `http://localhost:3333`
+
+Go to `http://localhost:3333/graphql`
+
+Create your first mutation:
+
+```js
+mutation {
+  createCat(name: "Scratchy") {
+    _id
+    name
+    lives
+  }
+}
+```
+
+Send your first query: 
+
+```js
+{
+  getAllCats {
+    _id
+    name
+    lives
+  }
+}
+```
